@@ -2,16 +2,19 @@
 <html >
 <meta charset="utf-8">
 <head>
-    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/material.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/material.min.js"></script>
-
-
-</head>
+<script src="js/listar.js"></script>
 <style>
 .mdl-layout__content { padding:10px;}
+.mdl-navigation__linktitulo {color:#0B3954; margin-left:15px; padding-bottom: 5px; font-weight: bold;}
+.separator { border-bottom:1pt solid #dddddd; }
+.logo-image {width: 200px; text-align: center; margin-left: 20px; padding:0px; }
+.mdl-layout__header {background: #003466;}
 </style>
+</head>
 <!-- define angular controller -->
 <body>
 <div id="separador"></div>
@@ -21,108 +24,129 @@
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Menu</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="index.html"><i class="material-icons">gavel</i>Leyes y reglamentos</a>
+      <span class="android-title mdl-layout-title">
+            <img class="logo-image" src="images/logo.jpg">
+          </span>
+          <span class="mdl-navigation__linktitulo" href="">Recursos offline</span>
+          <div class="separator"></div>
+      <a class="mdl-navigation__link" href="index.html">Leyes y reglamentos</a>
+          <span class="mdl-navigation__linktitulo" href="">Recursos online</span>
+          <div class="separator"></div>
+      <a class="mdl-navigation__link" href="leyesestatales.html">Leyes estatales</a>
+      <a class="mdl-navigation__link" href="recursos.html">Recursos varios</a>
+      <a class="mdl-navigation__link" href="internacional.html">Internacional</a>
+      <div class="separator"></div>
+      <a class="mdl-navigation__link" href="acercade.html">Acerca de</a>
        
-    </nav>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="recursos.html"><i class="material-icons">gavel</i>Recursos online</a>
-       
-    </nav>
-    <nav class="mdl-navigation">
-       <a class="mdl-navigation__link" href="acercade.html"><i class="material-icons">info</i>Acerca de</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
     <div class="page-content">
-      <div align="center"><span style="color: #900;">Estos recursos necesitan conexión a internet.</span></div>
+    
+    
 <div class="demo-list-action mdl-list">
-    <div class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <span>Guía práctica para la atención de las solicitudes de ejercicio de los derechos ARCO</span>
-      </span>
-      <button class="mdl-button mdl-button--icon mdl-button--colored">
-            <a href="http://www.asesorescorporativos.com.mx/download/399/" target="_blank"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
-      </button>
-    </div>
-    <div class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <span>Privacy by design, Ann Cavoukian</span>
-      </span>
-      <button class="mdl-button mdl-button--icon mdl-button--colored">
-            <a href="http://www.asesorescorporativos.com.mx/download/402/" target="_blank"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
-      </button>
-    </div>
-    <div class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <span>Declaración de Mauricio sobre el Internet de las Cosas</span>
-      </span>
-      <button class="mdl-button mdl-button--icon mdl-button--colored">
-            <a href="http://www.asesorescorporativos.com.mx/download/405/" target="_blank"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
-      </button>
-    </div>
-    <div class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <span>Directrices para la Armonización de la Protección de Datos en la Comunidad Iberoamericana</span>
-      </span>
-      <button class="mdl-button mdl-button--icon mdl-button--colored">
-            <a href="http://www.asesorescorporativos.com.mx/download/408/" target="_blank"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
-      </button>
-    </div>
-    <div class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <span>Directrices de la OCDE sobre protección de la privacidad y flujos transfronterizos de datos personales</span>
-      </span>
-      <button class="mdl-button mdl-button--icon mdl-button--colored">
-            <a href="http://www.asesorescorporativos.com.mx/download/411/" target="_blank"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
-      </button>
-    </div>
-    <div class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <span>El ABC del Aviso de Privacidad</span>
-      </span>
-      <button class="mdl-button mdl-button--icon mdl-button--colored">
-            <a href="http://www.asesorescorporativos.com.mx/download/414/" target="_blank"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
-      </button>
-    </div>
-    <div class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <span>Guía de buenas Prácticas para el Desarrollo de Apps</span>
-      </span>
-      <button class="mdl-button mdl-button--icon mdl-button--colored">
-            <a href="http://www.asesorescorporativos.com.mx/download/417/" target="_blank"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
-      </button>
-    </div>
-    <div class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <span>Dictamen 02/2013 sobre las aplicaciones de los dispositivos inteligentes</span>
-      </span>
-      <button class="mdl-button mdl-button--icon mdl-button--colored">
-            <a href="http://www.asesorescorporativos.com.mx/download/420/" target="_blank"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
-      </button>
-    </div>
-    <div class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <span>Privacy Design Guidelines for Mobile Application Development</span>
-      </span>
-      <button class="mdl-button mdl-button--icon mdl-button--colored">
-            <a href="http://www.asesorescorporativos.com.mx/download/423/" target="_blank"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
-      </button>
-    </div>
-    <div class="mdl-list__item">
-      <span class="mdl-list__item-primary-content">
-        <span>Dictamen 1/2008 sobre cuestiones de protección de datos relacionadas con motores de búsqueda</span>
-      </span>
-      <button class="mdl-button mdl-button--icon mdl-button--colored">
-            <a href="http://www.asesorescorporativos.com.mx/download/426/" target="_blank"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
-      </button>
-    </div>
+    <ul id="myUL">
+ <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/guia-de-esquemas-de-autorregulacion-en-materia-de-proteccion-de-datos-personales/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">Guía de esquemas de autorregulación en materia de protección de datos personales</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/criterios-minimos-sugeridos-para-la-contratacion-de-servicios-de-computo-en-la-nube-que-impliquen-el-tratamiento-de-datos-personales/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">Criterios mínimos sugeridos para la contratación de servicios de cómputo en la nube que impliquen el tratamiento de datos personales</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/recomendaciones-para-el-manejo-de-incidentes-de-seguridad-de-datos-personales/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">Recomendaciones para el manejo de incidentes de seguridad de datos personales</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/guia-para-el-tratamiento-de-datos-biometricos/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">Guía para el tratamiento de datos biométricos</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/recomendaciones-para-la-designacion-de-la-persona-o-departamento-de-datos-personales/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">Recomendaciones para la Designación de la Persona o Departamento de Datos Personales</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/guia-para-cumplir-con-los-principios-y-deberes-de-la-ley-federal-de-proteccion-de-datos-personales-en-posesion-de-los-particulares/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">Guía para cumplir con los principios y deberes de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+    <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/guia-para-implementar-un-sistema-de-gestion-de-seguridad-de-datos-personales/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">Guía para implementar un Sistema de Gestión de Seguridad de Datos Personales</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+    <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/guia-para-el-borrado-seguro-de-datos-personales/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">Guía para el Borrado Seguro de Datos Personales</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+    <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/manual-en-materia-de-seguridad-de-datos-personales-para-mipymes-y-organizaciones-pequenas/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">Manual en materia de seguridad de datos personales para MIPYMES y organizaciones pequeñas</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  
+  </ul>
+    
 
-</div>      
+</div> 
+
     </div>
 
   </main>
+  
 </body>
 
 </html>

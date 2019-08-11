@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="mx.com.asesorescorporativos.protecciondatos" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Compendio Protección de Datos</name>
+<widget id="mx.com.asesorescorporativos.protecciondatos" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Compendio datos personales</name>
     <description>
-        Recopilación de leyes y documentos sobre la protección de datos en México.
+        Compendio de leyes y recusos sobre privacidad y protección de datos personales.
     </description>
-    <author email="angelbernaga@gmail.com" href="http://asesorescorporativos.com.mx">
-        Asesores corporativos
+    <author email="angelbernaga@gmail.com" href="http://proteccionadatospersonales.com">
+        Angel Bernaga
     </author>
-<content src="index.html" />
+    <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
@@ -16,8 +16,9 @@
     <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" /> 
-    <icon src="icon.png" />
     <platform name="android">
+        <preference name="android-minSdkVersion" value="26" />  
+  <preference name="android-targetSdkVersion" value="26" /> 
         <icon density="ldpi" src="www/res/icon/android/mipmap-ldpi/ic_launcher.png" />
         <icon density="mdpi" src="www/res/icon/android/mipmap-mdpi/ic_launcher.png" />
         <icon density="hdpi" src="www/res/icon/android/mipmap-hdpi/ic_launcher.png" />

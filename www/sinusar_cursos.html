@@ -2,19 +2,20 @@
 <html >
 <meta charset="utf-8">
 <head>
-    <link rel="stylesheet" href="css/material.css">
+    <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/material.min.js"></script>
 <script src="js/listar.js"></script>
-<style>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <style>
 .mdl-layout__content { padding:10px;}
 .mdl-navigation__linktitulo {color:#0B3954; margin-left:15px; padding-bottom: 5px; font-weight: bold;}
 .separator { border-bottom:1pt solid #dddddd; }
 .logo-image {width: 200px; text-align: center; margin-left: 20px; padding:0px; }
 .mdl-layout__header {background: #003466;}
-.mdl-button { color: white; }
 </style>
+
 </head>
 <!-- define angular controller -->
 <body>
@@ -31,41 +32,54 @@
           </span>
           <span class="mdl-navigation__linktitulo" href="">Recursos offline</span>
           <div class="separator"></div>
-      <a class="mdl-navigation__link" href="index.html">Leyes y reglamentos</a>
+      <a class="mdl-navigation__link" href="leyesyreglamentos.html">Leyes y reglamentos</a>
           <span class="mdl-navigation__linktitulo" href="">Recursos online</span>
           <div class="separator"></div>
       <a class="mdl-navigation__link" href="leyesestatales.html">Leyes estatales</a>
       <a class="mdl-navigation__link" href="recursos.html">Recursos varios</a>
       <a class="mdl-navigation__link" href="internacional.html">Internacional</a>
+      <a class="mdl-navigation__link" href="index.html">Noticias</a>
       <div class="separator"></div>
       <a class="mdl-navigation__link" href="acercade.html">Acerca de</a>
        
     </nav>
   </div>
   <main class="mdl-layout__content">
-    <div class="page-content">
-    
- <div align="center">
+    <div class="page-content" id="contenido">
+    <br><br><br>
 
-<strong>Desarrollado por:</strong><br><br>
-Angel Bernaga<br>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored link">
-<a onclick="window.open('https://twitter.com/AngelBernaga', '_system');" href="https://twitter.com/AngelBernaga" target="_blank">Twitter</a> 
-</button><br><br>
+<script>
 
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored link">
-<a onclick="window.open('https://www.linkedin.com/in/angelbernaga/', '_system');" href="https://www.linkedin.com/in/angelbernaga/" target="_blank">LinkedIn</a> 
-</button>
+  $.ajax({
+    type: "POST",
+    data: {
+      "gender": $("#gender").val()
+    },
+    url: "http://asesorescorporativos.com.mx/apps/app_lite/promociones/api.php",
+    dataType: "json",
+    success: function(JSONObject) {
+      var peopleHTML = "";
 
-<br><br>
-www.proteccionadatospersonales.com
-<br><br>
-Esta aplicación no recolecta ningun dato sobre ti, solo necesita conexión a internet para los recursos online.
+      // Loop through Object and create peopleHTML
+      for (var key in JSONObject) {
+        if (JSONObject.hasOwnProperty(key)) {
+          peopleHTML += '<a href="' + JSONObject[key]["link"] + '" style="margin:0px;"><img src="' + JSONObject[key]["img"] + '" alt="" width="100%"></a><br><br>';
+           
+        }
+      }
 
+      // Replace table’s tbody html with peopleHTML
+      $("#contenido").html(peopleHTML);
+    }
+  });
+
+</script>
+
+</div><br><br>
     </div>
 
   </main>
-  
+
 </body>
 
 </html>

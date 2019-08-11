@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html >
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" href="css/material.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/material.min.js"></script>
+<script src="js/listar.js"></script>
+<style>
+.mdl-layout__content { padding:10px;}
+.mdl-navigation__linktitulo {color:#0B3954; margin-left:15px; padding-bottom: 5px; font-weight: bold;}
+.separator { border-bottom:1pt solid #dddddd; }
+.logo-image {width: 200px; text-align: center; margin-left: 20px; padding:0px; }
+.mdl-layout__header {background: #003466;}
+</style>
+</head>
+<!-- define angular controller -->
+<body>
+<div id="separador"></div>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">      
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <nav class="mdl-navigation">
+      <span class="android-title mdl-layout-title">
+            <img class="logo-image" src="images/logo.jpg">
+          </span>
+          <span class="mdl-navigation__linktitulo" href="">Recursos offline</span>
+          <div class="separator"></div>
+      <a class="mdl-navigation__link" href="index.html">Leyes y reglamentos</a>
+          <span class="mdl-navigation__linktitulo" href="">Recursos online</span>
+          <div class="separator"></div>
+      <a class="mdl-navigation__link" href="leyesestatales.html">Leyes estatales</a>
+      <a class="mdl-navigation__link" href="recursos.html">Recursos varios</a>
+      <a class="mdl-navigation__link" href="internacional.html">Internacional</a>
+      <div class="separator"></div>
+      <a class="mdl-navigation__link" href="acercade.html">Acerca de</a>
+       
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+    
+    
+<div class="demo-list-action mdl-list">
+  <form action="#" id="form_buscar">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="myInput"  onkeyup="myFunction()" >
+        <label class="mdl-textfield__label" for="sample3">Filtrar ley...</label>
+      </div>
+    </form>
+    <ul id="myUL">
+ <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-los-sujetos-obligados-del-estado-de-aguascalientes-y-sus-municipios/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE LOS SUJETOS OBLIGADOS DEL ESTADO DE AGUASCALIENTES Y SUS MUNICIPIOS</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-para-el-estado-de-baja-california/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS PARA EL ESTADO DE BAJA CALIFORNIA</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+    <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-para-el-estado-de-baja-california-sur/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS PARA EL ESTADO DE BAJA CALIFORNIA SUR</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-campeche/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES  EN POSESIÓN DE SUJETOS OBLIGADOS  DEL ESTADO DE CAMPECHE</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-chiapas/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÒN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS DEL ESTADO DE CHIAPAS</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-del-estado-de-chihuahua/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES DEL ESTADO DE CHIHUAHUA</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-coahuila-de-zaragoza/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS DEL ESTADO DE COAHUILA DE ZARAGOZA</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-para-el-estado-de-colima/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS PARA EL ESTADO DE COLIMA</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+    <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-durango/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE  SUJETOS OBLIGADOS DEL ESTADO DE DURANGO</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+      <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-para-el-estado-de-guanajuato/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS PARA EL ESTADO DE GUANAJUATO 
+</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+        <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-guerrero/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS DEL ESTADO DE GUERRERO</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-para-el-estado-de-hidalgo/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS PARA EL ESTADO DE HIDALGO</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-jalisco-y-sus-municipios/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS DEL ESTADO DE JALISCO Y SUS MUNICIPIOS</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-del-estado-de-mexico/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES DEL ESTADO DE MÉXICO </span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+    <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-michoacan-de-ocampo/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE
+SUJETOS OBLIGADOS DEL ESTADO DE MICHOACÁN DE OCAMPO</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-morelos/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS DEL ESTADO DE MORELOS</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-para-el-estado-de-nayarit/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS PARA EL ESTADO DE NAYARIT</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-oaxaca/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS
+OBLIGADOS DEL ESTADO DE OAXACA</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-puebla/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE  SUJETOS OBLIGADOS DEL ESTADO DE PUEBLA</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+    <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-queretaro/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS DEL ESTADO DE QUERÉTARO</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-para-el-estado-de-quintana-roo/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS PARA EL ESTADO DE QUINTANA ROO</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-los-sujetos-obligados-del-estado-de-san-luis-potosii/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCION DE DATOS PERSONALES EN POSESION DE LOS SUJETOS OBLIGADOS DEL ESTADO DE SAN LUIS POTOSI</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-sinaloa/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS DEL ESTADO DE SINALOA</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-sonora/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS DEL ESTADO DE SONORA
+</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+    <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-tabasco/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS DEL ESTADO DE TABASCO</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-tamaulipas/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS DEL ESTADO DE TAMAULIPAS</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-para-el-estado-de-tlaxcala/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES PARA EL ESTADO DE TLAXCALA</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li>
+
+  <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-para-el-estado-de-veracruz-de-ignacio-de-la-llave/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS PARA EL ESTADO DE VERACRUZ DE IGNACIO DE LA LLAVE</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li> <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-sujetos-obligados-del-estado-de-yucatan/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE SUJETOS OBLIGADOS
+DEL ESTADO DE YUCATÁN
+</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li> <li>
+  <div class="mdl-list__item" onclick="location.href='http://www.proteccionadatospersonales.com/bfd_download/ley-de-proteccion-de-datos-personales-en-posesion-de-los-sujetos-obligados-del-estado-de-zacatecas/'">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE LOS SUJETOS OBLIGADOS DEL ESTADO DE ZACATECAS </span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button></a>
+  </div>
+  </li> 
+  
+  </ul>
+    
+
+</div> 
+
+    </div>
+
+  </main>
+  
+</body>
+
+</html>
